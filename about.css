@@ -12,35 +12,45 @@ body {
     margin: 0;
     padding: 20px;
 }
-h1{
+header{
     color: var(--accent-color);
     text-align: center;
+    font-size: 2rem;
     margin-bottom: 20px;
 }
-p {
-    font-size: 1.2em;
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.main-content section{
+    flex: 1;
+}
+.main-content p{
     line-height: 1.6;
-    margin-bottom: 20px;
 }
-h2{
-    color: var(--light-blue);
-    margin-top: 30px;
-    padding-bottom: 10px;
+.main-content section p:last-child em {
+    color: var(--neon-purple);
+    margin-top:auto;
+    text-align:center;
+    padding-top: 20px;
 }
-ul {
-    list-style-type: none;
-    padding: 0;
+.main-content section:last-child{
+    display: flex;
+    flex-direction: column;
 }
-li{
-    margin-bottom: 10px;
-    padding-left: 20px;
-    position: relative;
-    font-size: 1.1em;
-    text-size: 1.1em;
+.main-content h2{
+    color:var(--light-blue);
+    margin-top:0;
+    margin-bottom: 15px;
 }
-hr{
-    border: 0;
-    height: 1px;
-    background-color: var(--neon-purple);
-    margin: 40px 0;
+.main-content section p,
+.main-content section ul{
+    margin-top:0;
+    padding-top: 0;
 }
