@@ -1,1 +1,145 @@
-                             
+:root {
+  --light-blue: #00A8FF;
+  --neon-purple: #8A2BE2;
+  --accent-color: #00FFD5;
+  --background-navyblue: #0F172A;
+  --text-light: #E0E0E0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--background-navyblue);
+  font-family: "Segoe UI", sans-serif;
+  color: var(--text-light);
+  padding: 50px 20px;
+}
+
+.contact-section {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 2rem;
+
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 24px;
+
+  box-shadow:
+    0 0 25px rgba(0, 168, 255, 0.15),
+    0 0 50px rgba(138, 43, 226, 0.1);
+}
+
+.contact-section h1 {
+  text-align: center;
+  color: var(--accent-color);
+  font-size: 2.8rem;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+}
+
+.contact-section h3,
+.contact-section p {
+  text-align: center;
+  color: #94A3B8;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--text-light);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+
+  border: 1px solid rgba(138, 43, 226, 0.4);
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-light);
+
+  font-size: 0.95rem;
+  outline: none;
+
+  transition: all 0.3s ease;
+}
+
+textarea {
+  min-height: 120px;
+  border-radius: 20px;
+  resize: vertical;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #94A3B8;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(#8A2BE2);
+  box-shadow: 0 0 15px rgba(128, 44, 202, 0.25);
+}
+
+button {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.9rem;
+
+  border: none;
+  border-radius: 999px;
+
+  background: linear-gradient(
+    135deg,
+    var(--light-purple),
+    var(--neon-purple)
+  );
+
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 0 15px rgba(138, 43, 228, 0.4),
+    0 0 30px rgba(138, 43, 226, 0.3);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .contact-section {
+    padding: 1.5rem;
+  }
+
+  .contact-section h1 {
+    font-size: 2.2rem;
+  }
+}                     
