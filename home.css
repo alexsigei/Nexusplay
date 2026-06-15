@@ -58,3 +58,25 @@ body {
     color: var(--light-blue);
 }
 
+/* HERO SECTION */
+.hero {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background: radial-gradient(circle at top, #1b2a4a, var(--background-navyblue));
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: var(--accent-color);
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: var(--text-light);
+}
