@@ -1,36 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nexus products</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexus Products</title>
+  <link rel="stylesheet" href="products.css">
 </head>
-<link rel="stylesheet" href="products.css">
 <body>
- <header>
-    <h1>nexus gaming store</h1>
-    <p>your one-stop shop for all gaming needs</p>
- </header> 
-    <section class="products">
-        <div class="product-card">
-            <img src="puzzlegame.png.jpg" alt="crystal puzzle">
-            <h2>crystal puzzle</h2>
-            <p>A challenging puzzle game that tests your problem-solving skills and patience.</p>
-            <button>buy now</button>
+  <header>
+    <h1>Nexus Gaming Store</h1>
+    <p>Your one-stop shop for all gaming needs</p>
+     <nav class="navbar">
+        <div class="container">
+            <div class="logo">Nexusplay</div>
+
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
         </div>
-    
-        <div class="product-card">
-            <img src="triviagame.png.jpg" alt="trivia master">
-            <h2>trivia master</h2>
-            <p>A fun and challenging trivia game that tests your knowledge across various categories.</p>
-            <button>buy now</button>
+    </nav>
+  </header> 
+
+  <section class="products">
+    <div class="product-container">
+      <div class="product-card">
+        <img src="./img/puzzlegame.svg" alt="crystal puzzle" class="product-image">
+        <h2> <class="product-name"></class>Crystal Puzzle</h2>
+        <p>A challenging puzzle game that tests your problem-solving skills and patience.</p>
+        <p> <div class="product-price">Sh500</div></p>
+      <button> <div class="add-to-cart-btn"></div>Buy Now</button>
+      </div>
+
+      <div class="product-card">
+        <img src="./img/triviagame.svg" alt="trivia master" class="product-image">
+        <h2>Trivia Master</h2>
+        <p>A fun and challenging trivia game that tests your knowledge across various categories.</p>
+        <p> <div class="product-price">Sh 600</div></p>
+        <button> <div class="add-to-cart-btn"></div>Buy Now</button>
+      </div>
+
+      <div class="product-card">
+        <img src="./img/Shootergame.svg" alt="galactic shooter" class="product-image">
+        <h2>Galactic Shooter</h2>
+        <p>An exciting space-themed shooter game that takes you on a journey through the cosmos.</p>
+        <p> <div class="product-price">Sh 800</div></p>
+        <button> <div class="add-to-cart-btn"></div>Buy Now</button>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Nexusplay</h3>
+            <p>Delivering next-generation gaming experiences for players worldwide.</p>
         </div>
-    
-        <div class="product-card">
-            <img src="Shootergame.png.jpg" alt="galactic shooter">
-            <h2>galactic shooter</h2>
-            <p>An exciting space-themed shooter game that takes you on a journey through the cosmos. With intense combat, stunning visuals, and a gripping storyline, Galactic Shooter offers an immersive gaming experience for space enthusiasts.</p>
-            <button>buy now</button>
-        </div> 
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Support</h3>
+            <ul>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">X</a>
+                <a href="#">YouTube</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p> &copy; 2026 Nexusplay. All Rights Reserved.</p>
+    </div>
+</footer>
+
 </body>
 </html>
