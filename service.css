@@ -17,7 +17,7 @@ body {
     min-height: 100vh;
     background: var(--neon-purple);
     font-family: 'Segoe UI', sans-serif;
-    color: var(--text-light)
+    color: var(--text-light);
     padding: 50px 20px;    
 }
 
@@ -148,7 +148,7 @@ body > p {
 }
 
 /* Optional glowing effect */
-..service-card::before {
+.service-card::before {
     content: "";
     position: absolute;
     inset: -2px;
