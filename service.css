@@ -2,8 +2,8 @@
     --light-blue: #00A8FF;
     --neon-purple: #8A2BE2;
     --accent-color: #00FFD5;
-    --background-navyblue: #0F172A;
-    --text-light: #E0E0E0;
+    --background-navyblue: #8a2be2;
+    --text-light: #00ffd5;
 }
 
 /* Reset */
@@ -14,7 +14,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     background: var(--background-navyblue);
     color: var(--text-light);
     min-height: 100vh;
