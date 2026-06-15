@@ -8,23 +8,31 @@
 </head>
 <body>
 <section class="contact-section">
-    <div class="container"></div>
-    <h1>Contact Us.</h1>
-    <h2>We'd love to hear from you!<br>
- Our team is here to assist you and will get back to you as soon as possible.
-    </h2><br>
-    <form action="/submit_contact" method="post">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
+    <div class="container">
+        <h1>Contact Us.</h1>
+        <h2>We'd love to hear from you!</h2>
+        <p>Our team is here to assist you and will get back to you as soon as possible.</p>
+        <form action="/submit_contact" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
 
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
 
+            <label for="services">Choose your Service of Interest:</label><br>
+          <select id="services" name="Services">
+            <option value="game development">Game Development</option>
+            <option value="game publishing">Game Publishing</option>
+            <option value="esports management">E-Sports Management</option>
+            <option value="community management">Community Management</option>
+          </select><br><br>
         <label for="message">Message:</label><br>
         <textarea id="message" name="message" rows="5" required></textarea><br><br>
 
         <input type="submit" value="Submit">
     </form>
+    </div>
+    
 </section>
 </body>
 </html>
