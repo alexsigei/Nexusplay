@@ -14,7 +14,6 @@
 }
 
 body {
-    /* background-image: url("./img/background2.jpg"); */
     background-color: #8A2BE2;
     background-size: cover;
     background-position: center;
@@ -143,4 +142,61 @@ body {
 .secondary:hover {
     background: var(--accent-color);
     color: #000;
+}
+
+/* FOOTER */
+.footer {
+    background: rgba(15, 23, 42, 0.95);
+    padding-top: 50px;
+    margin-top: 0;
+    color: var(--text-light);
+}
+
+.footer-container {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+.footer-section h3 {
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: var(--text-light);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-section a:hover {
+    color: var(--light-blue);
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    background: rgba(0, 0, 0, 0.2);
 }
