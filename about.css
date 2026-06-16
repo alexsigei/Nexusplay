@@ -1,3 +1,5 @@
+@import url('about.css');
+
 :root {
     --light-blue: #00A8FF;
     --neon-purple: #8A2BE2;
@@ -6,7 +8,7 @@
     --text-light: #E0E0E0;
 }
 body {
-    background-color: var(--background-navyblue);
+    background-color: var(--neon-purple);
     color: var(--text-light);
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -15,9 +17,24 @@ body {
 header{
     color: var(--accent-color);
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 20px;
+    font-weight: 500;
 }
+
+header p {
+    color: var(--text-light);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.about-container {
+    background: linear-gradient(
+        rgba(15, 23, 42, 0.6),
+        rgba(15, 23, 42, 0.8)
+    )
+}
+
 .main-content {
     max-width: 1200px;
     margin: 0 auto;
