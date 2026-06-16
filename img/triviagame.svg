@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300"
+     id="img-trivia-master" data-product="trivia-master" data-category="trivia" data-track="true">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0F172A"/>
+      <stop offset="100%" style="stop-color:#1C3A1C"/>
+    </linearGradient>
+    <linearGradient id="bulbGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FDE68A"/>
+      <stop offset="100%" style="stop-color:#F59E0B"/>
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="400" height="300" fill="url(#bgGrad2)"/>
+
+  <!-- Grid lines background -->
+  <line x1="0" y1="75" x2="400" y2="75" stroke="#1E3A1E" stroke-width="1"/>
+  <line x1="0" y1="150" x2="400" y2="150" stroke="#1E3A1E" stroke-width="1"/>
+  <line x1="0" y1="225" x2="400" y2="225" stroke="#1E3A1E" stroke-width="1"/>
+  <line x1="100" y1="0" x2="100" y2="300" stroke="#1E3A1E" stroke-width="1"/>
+  <line x1="200" y1="0" x2="200" y2="300" stroke="#1E3A1E" stroke-width="1"/>
+  <line x1="300" y1="0" x2="300" y2="300" stroke="#1E3A1E" stroke-width="1"/>
+
+  <!-- Central lightbulb -->
+  <g filter="url(#glow2)" transform="translate(200,118)">
+    <ellipse cx="0" cy="-30" rx="38" ry="44" fill="url(#bulbGrad)" opacity="0.95"/>
+    <rect x="-14" y="12" width="28" height="8" rx="2" fill="#92400E"/>
+    <rect x="-12" y="19" width="24" height="8" rx="2" fill="#92400E"/>
+    <rect x="-10" y="26" width="20" height="6" rx="3" fill="#78350F"/>
+    <!-- Filament -->
+    <path d="M-6,-10 Q0,-25 6,-10" stroke="#FEF3C7" stroke-width="1.5" fill="none" opacity="0.8"/>
+  </g>
+
+  <!-- Radiating question marks -->
+  <text x="80" y="90" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#34D399" opacity="0.85" filter="url(#glow2)">?</text>
+  <text x="295" y="95" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#60A5FA" opacity="0.85" filter="url(#glow2)">?</text>
+  <text x="55" y="170" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#F472B6" opacity="0.7">?</text>
+  <text x="318" y="175" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#FBBF24" opacity="0.7">?</text>
+  <text x="110" y="195" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#A78BFA" opacity="0.6">?</text>
+  <text x="270" y="195" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#34D399" opacity="0.6">?</text>
+
+  <!-- Category chips -->
+  <rect x="20" y="210" width="70" height="22" rx="11" fill="#065F46" opacity="0.9"/>
+  <text x="55" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6EE7B7">Science</text>
+
+  <rect x="100" y="210" width="70" height="22" rx="11" fill="#1E3A8A" opacity="0.9"/>
+  <text x="135" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#93C5FD">History</text>
+
+  <rect x="180" y="210" width="70" height="22" rx="11" fill="#4C1D95" opacity="0.9"/>
+  <text x="215" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#C4B5FD">Sports</text>
+
+  <rect x="260" y="210" width="70" height="22" rx="11" fill="#7C2D12" opacity="0.9"/>
+  <text x="295" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#FCA5A5">Music</text>
+
+  <rect x="340" y="210" width="50" height="22" rx="11" fill="#1F2937" opacity="0.9"/>
+  <text x="365" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#9CA3AF">Art</text>
+
+  <!-- Bottom label -->
+  <rect x="0" y="242" width="400" height="58" fill="#0F172A" opacity="0.8"/>
+  <text x="200" y="268" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#FBBF24">Trivia Master</text>
+  <text x="200" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#34D399">Test your knowledge. Rule the board.</text>
+
+  <!-- Badge -->
+  <rect x="10" y="10" width="80" height="24" rx="12" fill="#065F46" opacity="0.9"/>
+  <text x="50" y="26" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6EE7B7">TRIVIA</text>
+</svg>
