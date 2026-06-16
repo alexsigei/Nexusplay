@@ -13,11 +13,13 @@
 }
 
 body {
-  min-height: 100vh;
-  background: var(--neon-purple);
-  font-family: "Segoe UI", sans-serif;
-  color: var(--text-light);
-  padding: 50px 20px;
+    background-color: #8A2BE2;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: var(--text-light);
 }
 
 /* NAVBAR */
