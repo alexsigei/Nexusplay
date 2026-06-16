@@ -20,7 +20,47 @@ body {
   padding: 50px 20px;
 }
 
-.contact-section {
+/* NAVBAR */
+.navbar {
+    padding: 20px 0;
+    background: rgba(15, 23, 42, 0.9);
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--accent-color);
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-light);
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--light-blue);
+}
+
+.contact-container {
   max-width: 450px;
   margin: 0 auto;
   padding: 2rem;
@@ -39,7 +79,7 @@ body {
     0 0 50px rgba(138, 43, 226, 0.1);
 }
 
-.contact-section h1 {
+.contact-container h1 {
   text-align: center;
   color: var(--accent-color);
   font-size: 2.8rem;
@@ -47,7 +87,7 @@ body {
   font-weight: 700;
 }
 
-.contact-section h2 {
+.contact-container h2 {
  text-align: center;
   color: var(--accent-color);
   font-size: 1.4rem;
@@ -55,7 +95,7 @@ body {
   font-weight: 600;
 }
 
-.contact-section p {
+.contact-container p {
   text-align: center;
   color: #94A3B8;
   font-size: 1.1rem;
@@ -160,11 +200,68 @@ button:active {
 }
 
 @media (max-width: 600px) {
-  .contact-section {
+  .contact-container {
     padding: 1.5rem;
   }
 
-  .contact-section h1 {
+  .contact-container h1 {
     font-size: 2.2rem;
   }
 }                     
+
+/* FOOTER */
+.footer {
+    background: rgba(15, 23, 42, 0.95);
+    padding-top: 50px;
+    margin-top: 0;
+    color: var(--text-light);
+}
+
+.footer-container {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+.footer-section h3 {
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: var(--text-light);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-section a:hover {
+    color: var(--light-blue);
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    background: rgba(0, 0, 0, 0.2);
+}
